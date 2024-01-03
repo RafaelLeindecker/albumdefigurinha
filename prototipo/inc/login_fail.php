@@ -1,0 +1,5 @@
+<div class="container">
+	<h1>Ops!</h1>
+	<p>É necessário efetuar o <strong>login</strong> para acessar essa página.<br>
+	Se você ainda não tem, faça o <a href="cadastro.php">cadastro</a>. É rápido!</p>	
+</div><!-- /.container -->

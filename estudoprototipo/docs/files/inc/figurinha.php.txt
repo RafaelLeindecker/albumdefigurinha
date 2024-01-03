@@ -1,0 +1,32 @@
+<?php
+include "conexao.php";	
+
+Class FigurinhaDAO  {
+	
+	public $conn=NULL;
+		
+	public function FigurinhaDAO() {
+		$this->conn=new Conexao();
+	}	
+
+	public function getQuantidade(){
+		
+		$this->conn->Connect();
+		$query = mysql_query("SELECT * FROM figurinha") or die (mysql_error());
+		$num_row = mysql_num_rows($query);
+       	        
+        for($i = 0; $i < $num_row; $i++){		
+			print("<div>figurinha</div>");
+		}	
+
+        $this->conn->disconnect();
+	}  	
+}			  	
+ 
+$daoteste = new FigurinhaDAO();
+$daoteste->getQuantidade();
+ 
+ 	
+ ?>
+		
+
